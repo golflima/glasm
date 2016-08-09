@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4626810B-77F1-4504-94AD-F57547D7FE43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49E3924C-F41F-47C9-9EF2-246AB985AF6C}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GL.Asm", "src\GL.Asm\GL.Asm.xproj", "{0CC6B3BA-46F7-48BA-845F-650BF072A28C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GL.Asm.Master", "src\GL.Asm.Master\GL.Asm.Master.xproj", "{13D91A01-E5C2-46D1-B629-50179A975BD9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C} = {0CC6B3BA-46F7-48BA-845F-650BF072A28C}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GL.Asm.Slave", "src\GL.Asm.Slave\GL.Asm.Slave.xproj", "{020B5656-4DF6-4DC1-8536-EBDDDB8F11B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C} = {0CC6B3BA-46F7-48BA-845F-650BF072A28C}
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GL.Asm.Client", "src\GL.Asm.Client\GL.Asm.Client.xproj", "{61D4F60B-EDD1-4D77-83C1-B3B3BCE81446}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C} = {0CC6B3BA-46F7-48BA-845F-650BF072A28C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D91A01-E5C2-46D1-B629-50179A975BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D91A01-E5C2-46D1-B629-50179A975BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D91A01-E5C2-46D1-B629-50179A975BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D91A01-E5C2-46D1-B629-50179A975BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020B5656-4DF6-4DC1-8536-EBDDDB8F11B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020B5656-4DF6-4DC1-8536-EBDDDB8F11B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020B5656-4DF6-4DC1-8536-EBDDDB8F11B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020B5656-4DF6-4DC1-8536-EBDDDB8F11B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D4F60B-EDD1-4D77-83C1-B3B3BCE81446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D4F60B-EDD1-4D77-83C1-B3B3BCE81446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D4F60B-EDD1-4D77-83C1-B3B3BCE81446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D4F60B-EDD1-4D77-83C1-B3B3BCE81446}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CC6B3BA-46F7-48BA-845F-650BF072A28C} = {4626810B-77F1-4504-94AD-F57547D7FE43}
+		{13D91A01-E5C2-46D1-B629-50179A975BD9} = {4626810B-77F1-4504-94AD-F57547D7FE43}
+		{020B5656-4DF6-4DC1-8536-EBDDDB8F11B0} = {4626810B-77F1-4504-94AD-F57547D7FE43}
+		{61D4F60B-EDD1-4D77-83C1-B3B3BCE81446} = {4626810B-77F1-4504-94AD-F57547D7FE43}
+	EndGlobalSection
+EndGlobal
