@@ -1,5 +1,14 @@
 {
+  "title": "Glasm Core Library",
+  "description": "Glasm - GL's Application and System Manager",
+  "copyright": "(C) 2016, Jeremy WALTHER <jeremy.walther@golflima.net>",
+  "authors": [ "Jérémy WALTHER <jeremy.walther@golflima.net>" ],
+  "packOptions": { "licenseUrl": "https://www.gnu.org/licenses/gpl-3.0.html" },
   "version": "1.0.0-*",
+
+  "buildOptions": {
+    "outputName": "glasm-lib"
+  },
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
